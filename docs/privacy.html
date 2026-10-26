@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Scientific Calculators ProX — Privacy Policy</title>
+<title>ElizaAI — Privacy Policy</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
@@ -29,30 +29,54 @@ nav a{margin-right:16px}
 </head>
 <body>
 <main>
-<h1>Scientific Calculators ProX — Privacy Policy</h1>
-<p class="sub">Last updated: 2026-08-16</p>
-<p>Scientific Calculators ProX works fully offline. Nothing you type into it ever leaves your device.</p>
+<h1>ElizaAI — Privacy Policy</h1>
+<p class="sub">Last updated: 2026-10-26</p>
+<p>ElizaAI works offline, and what you type into it stays on your device unless you share it or you turn on Apple Private Cloud Compute for the tutor on iPhone or iPad, which sends the problem and your tutor messages to Apple — never to us.</p>
 
 <h2>What we collect</h2>
 <p>Nothing. The app collects no personal data of any kind, and there is no account to create.</p>
 
 <h2>What we do not collect</h2>
-<p>We never collect: your name, email address, phone number or any account identifier — the app has no sign-in; usage analytics, crash reports, advertising identifiers or any other telemetry; your location, contacts, photos, calendar, microphone, camera or health data; and none of what you calculate — expressions, results, history, market-scale presets, carts and day logs are written to your device and never transmitted.</p>
+<p>We never collect: your name, email address, phone number or any account identifier — the app has no sign-in; usage analytics, crash reports, advertising identifiers or any other telemetry; your location, contacts, photos, calendar, microphone, camera or health data; and none of what you calculate — expressions, results, history, market-scale presets, carts and day logs are written to your device and never transmitted, unless you turn on Apple Private Cloud Compute for the tutor on iPhone or iPad, which sends the problem and your tutor messages to Apple — never to us.</p>
 
 <h2>What stays on your device</h2>
 <ul>
 <li>Your settings, the calculator mode you last used, and each mode's own state.</li>
 <li>Calculation history for the scientific modes.</li>
 <li>Market Scale data: saved goods, tares, the current cart, the day log, and the seller name and phone number if you choose to enter them for receipt footers.</li>
-<li>The date you first opened the app and whether you have bought a plan or the lifetime unlock. These live in the system keychain (iOS) or the app's private keystore area (Android) so that reinstalling does not restart your free month or make you pay twice. Neither identifies you.</li>
+<li>The date you first opened the app and whether you have bought a plan or the lifetime unlock. These live in the system keychain (iOS) or the app's private keystore area (Android) so that reinstalling does not restart your free year or make you pay twice. Neither identifies you.</li>
 </ul>
 <p>Everything else lives in the app's private storage area, which the operating system keeps unreadable to other apps.</p>
+
+<h2>Encryption on your device</h2>
+<p>Your sales, saved goods, shop name and phone, and your worksheet are encrypted where they are stored, using AES-256-GCM under a key that your device's secure hardware holds — the iOS and macOS keychain, or the Android Keystore. The app is handed the encrypted result and never the key. Some devices cannot provide such a key; on those, the data is kept in the app's private storage without encryption, and the app's Offline and privacy screen says so plainly rather than claiming otherwise.</p>
+<p>Because the key belongs to that one device, this encrypted data is deliberately excluded from iCloud and Google backups. A backup that carried the files without the key would restore something nothing could open.</p>
+
+<h2>Your own backup file</h2>
+<p>You can save a backup of everything the app keeps. It is one file, encrypted with a passphrase you choose, which the app never stores and cannot recover — if you forget it, the file cannot be opened, by us or by anyone. The file is created on your device and goes only where you send it through your device's own share sheet. Restoring one decrypts and checks the whole file before changing anything, so a wrong passphrase or a damaged file leaves your device exactly as it was.</p>
+<p>A backup never contains anything about your purchases or your free trial. Those belong to your app store account, not to the file.</p>
+
+<h2>The optional lock</h2>
+<p>You can ask the app to require your face, fingerprint or passcode before it shows your sales, saved goods and shop details. The calculators are never locked. The check is performed entirely by your device's operating system, which answers only yes or no. The app never sees, stores or transmits anything about your face or fingerprint.</p>
+<p>On Android this is the one permission the app declares for itself, <code>USE_BIOMETRIC</code>. It is a normal permission: it is granted when the app is installed, you are never asked about it, and it grants no access to any data. It exists only so the app may ask the operating system the yes-or-no question above. On iOS and macOS the equivalent is Face ID, and the app asks for it with a purpose string you see the first time.</p>
 
 <h2>Network access</h2>
 <p>The app contains no developer-operated networking code. There is no analytics library, crash reporter or advertising SDK. On Android, the Google Play billing library adds the store's billing entitlement plus network permissions that it uses only to communicate with Google Play about purchases. The app sends no data to the developer. An automated test in our build fails if anyone adds an unreviewed dependency that would change this boundary.</p>
 
+<h2>The tutor and Apple Private Cloud Compute</h2>
+<p>On iPhone, iPad and Mac with Apple Intelligence, the tutor and its practice problems run on the device by default, and nothing is sent. On iPhone and iPad with iOS 27 or later you can turn on Apple Private Cloud Compute for the tutor in Settings &rarr; Tutor. It is off unless you turn it on, and you can turn it off at any time. While it is on, the problem, the calculator's steps for it, your tutor messages and your practice requests are sent to Apple's Private Cloud Compute servers to be answered — to Apple, never to us. Nothing from your sales, price list, history or shop details is ever sent. Apple's own privacy terms apply to that processing; see <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+
+<h2>Voice input on Mac</h2>
+<p>On Mac (macOS 26 or later), voice input downloads Apple's speech model once; what you say is turned into text on the Mac. No audio is recorded, kept or sent, and the text stays in the field you spoke into until you send or insert it. The app asks for the microphone with a purpose string you see the first time. On iPhone and iPad it is not offered.</p>
+
+<h2>Siri and Shortcuts</h2>
+<p>On iPhone, iPad and Mac you can ask Siri, or run the action in the Shortcuts app, to "Solve a problem in ElizaAI". The problem you say reaches the app through the system, and the app puts it in the Worksheet for you to check; the answer is computed on the device. Turning what you say into text is Siri's own processing, done by Apple under Apple's terms, not by us. The app adds no Siri data of its own and keeps nothing beyond the Worksheet line.</p>
+
+<h2>Exam mode</h2>
+<p>Exam mode is a setting kept on this device only. It is never put in a backup and never leaves the device; a restore keeps the device's own setting, and Delete all data turns it off. While it is on, the app hides the camera scan, the steps, the tutor and the other model features, and shows a badge with the time it went on.</p>
+
 <h2>Purchases</h2>
-<p>Classic and Market Scale are free forever. Advanced and Ultimate are free for 30 days from your first launch. After that, you can choose a monthly plan, a yearly plan, or a one-time lifetime unlock. Plans renew automatically until cancelled; the lifetime unlock never expires.</p>
+<p>Basic, Market Scale, the Worksheet, the unit converter and the formulas are free forever. Scientific is free for a year from your first launch. After that, it needs Calculators ProX Premium: a one-time lifetime unlock, a yearly plan or a monthly plan. Plans renew automatically until cancelled; the lifetime unlock never expires.</p>
 <ul>
 <li><a href="https://www.apple.com/legal/privacy/">Apple App Store</a> — processes purchases on iOS and tells the app whether an entitlement is active.</li>
 <li><a href="https://policies.google.com/privacy">Google Play</a> — processes purchases on Android and tells the app whether an entitlement is active.</li>
@@ -63,10 +87,10 @@ nav a{margin-right:16px}
 <p>Copying a result, sharing a receipt or exporting a day log as CSV hands that text to the app you pick — a messaging app, an email client, the clipboard. That happens only when you tap the button, it goes wherever you send it, and it never passes through us.</p>
 
 <h2>How long we keep it</h2>
-<p>Your data stays on your device for as long as the app is installed. Deleting the app deletes it. Because nothing is ever uploaded, there is no copy anywhere else for us to keep or delete.</p>
+<p>Your data stays on your device for as long as the app is installed. Deleting the app deletes it. Because nothing is ever uploaded to us, there is no copy anywhere for us to keep or delete.</p>
 
 <h2>Deleting your data</h2>
-<p>Clear history or delete items inside the app, or remove the app from your device to erase everything at once. There is no account to close and nothing to request from us.</p>
+<p>Settings &rarr; Offline and privacy &rarr; <strong>Delete all data</strong> removes everything the app has saved on this device, in one step and after two confirmations. You can also clear history or delete individual items, or remove the app altogether. There is no account to close and nothing to request from us.</p>
 
 <h2>Children</h2>
 <p>This app is not directed at children under 13 and does not knowingly collect their information.</p>
@@ -79,30 +103,54 @@ nav a{margin-right:16px}
 
 <hr style="margin:36px 0;border:0;border-top:1px solid #eef0f4">
 
-<h1>Scientific Calculators ProX — Chính sách quyền riêng tư</h1>
-<p class="sub">Cập nhật lần cuối: 16/08/2026</p>
-<p>Scientific Calculators ProX chạy hoàn toàn ngoại tuyến. Không có gì bạn nhập vào ứng dụng từng rời khỏi máy của bạn.</p>
+<h1>ElizaAI — Chính sách quyền riêng tư</h1>
+<p class="sub">Cập nhật lần cuối: 26/10/2026</p>
+<p>ElizaAI chạy ngoại tuyến, và những gì bạn nhập vào ứng dụng nằm trên máy của bạn trừ khi bạn chia sẻ hoặc bật Apple Private Cloud Compute cho gia sư trên iPhone hay iPad, khi đó bài toán và tin nhắn của bạn với gia sư được gửi đến Apple — không bao giờ đến chúng tôi.</p>
 
 <h2>Chúng tôi thu thập gì</h2>
 <p>Không gì cả. Ứng dụng không thu thập bất kỳ dữ liệu cá nhân nào, và cũng không có tài khoản nào để đăng ký.</p>
 
 <h2>Chúng tôi không thu thập gì</h2>
-<p>Chúng tôi không bao giờ thu thập: tên, email, số điện thoại hay bất kỳ định danh tài khoản nào — ứng dụng không có đăng nhập; số liệu sử dụng, báo cáo sự cố, mã quảng cáo hay bất kỳ dữ liệu đo đạc nào; vị trí, danh bạ, ảnh, lịch, micro, camera hay dữ liệu sức khỏe; và không thu thập những gì bạn tính — biểu thức, kết quả, lịch sử, hàng đã lưu, giỏ hàng và sổ ngày đều chỉ được ghi vào máy bạn, không được gửi đi đâu.</p>
+<p>Chúng tôi không bao giờ thu thập: tên, email, số điện thoại hay bất kỳ định danh tài khoản nào — ứng dụng không có đăng nhập; số liệu sử dụng, báo cáo sự cố, mã quảng cáo hay bất kỳ dữ liệu đo đạc nào; vị trí, danh bạ, ảnh, lịch, micro, camera hay dữ liệu sức khỏe; và không thu thập những gì bạn tính — biểu thức, kết quả, lịch sử, hàng đã lưu, giỏ hàng và sổ ngày đều chỉ được ghi vào máy bạn, không được gửi đi đâu, trừ khi bạn bật Apple Private Cloud Compute cho gia sư trên iPhone hay iPad, khi đó bài toán và tin nhắn của bạn với gia sư được gửi đến Apple — không bao giờ đến chúng tôi.</p>
 
 <h2>Những gì được lưu trên máy bạn</h2>
 <ul>
 <li>Cài đặt của bạn, chế độ máy tính bạn dùng gần nhất, và trạng thái riêng của từng chế độ.</li>
 <li>Lịch sử tính toán của các chế độ khoa học.</li>
 <li>Dữ liệu chế độ Cân hàng: mặt hàng đã lưu, bì, giỏ hàng hiện tại, sổ bán hàng theo ngày, cùng tên và số điện thoại người bán nếu bạn nhập để in ở cuối biên lai.</li>
-<li>Ngày bạn mở ứng dụng lần đầu và việc bạn đã mua gói hay mở khóa vĩnh viễn hay chưa. Các mục này nằm trong keychain hệ thống (iOS) hoặc vùng lưu trữ riêng của ứng dụng (Android) để việc cài lại không làm mất tháng dùng thử hay bắt bạn trả tiền lần nữa. Cả hai đều không định danh bạn.</li>
+<li>Ngày bạn mở ứng dụng lần đầu và việc bạn đã mua gói hay mở khóa vĩnh viễn hay chưa. Các mục này nằm trong keychain hệ thống (iOS) hoặc vùng lưu trữ riêng của ứng dụng (Android) để việc cài lại không bắt đầu lại năm miễn phí hay bắt bạn trả tiền lần nữa. Cả hai đều không định danh bạn.</li>
 </ul>
 <p>Mọi thứ còn lại nằm trong vùng lưu trữ riêng của ứng dụng, nơi hệ điều hành không cho ứng dụng khác đọc.</p>
+
+<h2>Mã hóa trên máy bạn</h2>
+<p>Các đơn hàng, hàng đã lưu, tên và số điện thoại cửa hàng, cùng trang tính của bạn được mã hóa ngay tại chỗ lưu, bằng AES-256-GCM với khóa do phần cứng bảo mật của máy giữ — keychain trên iOS và macOS, hoặc Android Keystore. Ứng dụng chỉ nhận lại dữ liệu đã mã hóa, không bao giờ nhận khóa. Một số máy không cấp được khóa như vậy; trên những máy đó dữ liệu vẫn nằm trong vùng lưu trữ riêng của ứng dụng nhưng không mã hóa, và màn hình “Ngoại tuyến và quyền riêng tư” nói rõ điều đó thay vì nói khác đi.</p>
+<p>Vì khóa thuộc về riêng máy đó, phần dữ liệu này được cố ý loại khỏi sao lưu iCloud và Google. Một bản sao lưu mang theo tệp mà không có khóa sẽ khôi phục ra thứ không gì mở được.</p>
+
+<h2>Tệp sao lưu của riêng bạn</h2>
+<p>Bạn có thể lưu một bản sao mọi thứ ứng dụng đang giữ. Đó là một tệp duy nhất, được mã hóa bằng mật khẩu do bạn chọn; ứng dụng không lưu và không thể khôi phục mật khẩu đó — nếu bạn quên, không ai mở được tệp, kể cả chúng tôi. Tệp được tạo trên máy bạn và chỉ đi tới nơi bạn gửi qua khay chia sẻ của máy. Khi khôi phục, ứng dụng giải mã và kiểm tra toàn bộ tệp trước khi thay đổi bất cứ thứ gì, nên mật khẩu sai hay tệp hỏng sẽ để máy bạn nguyên như cũ.</p>
+<p>Bản sao lưu không bao giờ chứa thông tin về giao dịch mua hay thời gian dùng thử của bạn. Những thứ đó thuộc về tài khoản cửa hàng, không thuộc về tệp.</p>
+
+<h2>Khóa tùy chọn</h2>
+<p>Bạn có thể yêu cầu ứng dụng hỏi khuôn mặt, vân tay hoặc mật mã trước khi hiện đơn hàng, hàng đã lưu và thông tin cửa hàng. Các máy tính không bao giờ bị khóa. Việc xác thực do hệ điều hành của máy thực hiện hoàn toàn, và nó chỉ trả lời có hoặc không. Ứng dụng không bao giờ nhìn thấy, lưu hay gửi đi bất cứ thông tin nào về khuôn mặt hay vân tay của bạn.</p>
+<p>Trên Android, đây là quyền duy nhất mà ứng dụng tự khai báo: <code>USE_BIOMETRIC</code>. Đây là quyền thông thường — được cấp ngay khi cài đặt, bạn không bao giờ bị hỏi, và nó không cho phép truy cập dữ liệu nào cả. Nó chỉ để ứng dụng đặt câu hỏi có-hoặc-không nêu trên cho hệ điều hành. Trên iOS và macOS, tương đương là Face ID, và ứng dụng xin quyền đó kèm một dòng giải thích mà bạn thấy ngay lần đầu.</p>
 
 <h2>Kết nối mạng</h2>
 <p>Ứng dụng không có mã mạng do nhà phát triển vận hành. Không có thư viện phân tích, báo lỗi tự động hay SDK quảng cáo. Trên Android, thư viện thanh toán của Google Play thêm quyền thanh toán cùng các quyền mạng mà nó chỉ dùng để trao đổi với Google Play về giao dịch. Ứng dụng không gửi dữ liệu nào đến nhà phát triển. Một bài kiểm thử tự động trong quy trình dựng sẽ báo lỗi nếu ai đó thêm một thư viện chưa được xem xét làm thay đổi ranh giới này.</p>
 
+<h2>Gia sư và Apple Private Cloud Compute</h2>
+<p>Trên iPhone, iPad và Mac có Apple Intelligence, gia sư và bài luyện tập của gia sư mặc định chạy ngay trên máy, không gửi gì đi. Trên iPhone và iPad có iOS 27 trở lên, bạn có thể bật Apple Private Cloud Compute cho gia sư trong Cài đặt &rarr; Gia sư. Tính năng này tắt cho đến khi bạn bật, và bạn có thể tắt bất cứ lúc nào. Khi đang bật, bài toán, các bước giải của máy tính, tin nhắn của bạn trong gia sư và yêu cầu bài luyện tập được gửi đến máy chủ Private Cloud Compute của Apple để trả lời — đến Apple, không bao giờ đến chúng tôi. Không bao giờ gửi đơn hàng, bảng giá, lịch sử hay thông tin cửa hàng. Việc xử lý đó tuân theo điều khoản quyền riêng tư của chính Apple; xem <a href="https://www.apple.com/legal/privacy/">chính sách quyền riêng tư của Apple</a>.</p>
+
+<h2>Nhập bằng giọng nói trên Mac</h2>
+<p>Trên máy Mac (macOS 26 trở lên), tính năng nhập bằng giọng nói tải mô hình giọng nói của Apple về một lần; lời bạn nói được chuyển thành chữ ngay trên máy Mac. Không có âm thanh nào được ghi lại, lưu giữ hay gửi đi, và chữ chỉ nằm trong ô bạn vừa nói vào cho đến khi bạn gửi hoặc chèn nó. Ứng dụng xin quyền dùng micrô kèm một dòng giải thích mà bạn thấy ở lần đầu. Trên iPhone và iPad, tính năng này không có.</p>
+
+<h2>Siri và Phím tắt</h2>
+<p>Trên iPhone, iPad và Mac, bạn có thể bảo Siri, hoặc chạy tác vụ trong ứng dụng Phím tắt, để giải một bài toán bằng ElizaAI. Bài toán bạn nói đến ứng dụng qua hệ thống, và ứng dụng đặt nó vào Bảng tính nháp để bạn kiểm tra; đáp số được tính ngay trên máy. Việc chuyển lời bạn nói thành chữ là phần xử lý của chính Siri, do Apple thực hiện theo điều khoản của Apple, không phải chúng tôi. Ứng dụng không thêm dữ liệu Siri nào của riêng mình và không giữ gì ngoài dòng trong Bảng tính nháp.</p>
+
+<h2>Chế độ thi</h2>
+<p>Chế độ thi là một cài đặt chỉ lưu trên máy này. Nó không bao giờ nằm trong bản sao lưu hay rời khỏi máy; khi khôi phục, máy giữ cài đặt của chính nó, và Xóa toàn bộ dữ liệu sẽ tắt chế độ này. Khi đang bật, ứng dụng ẩn tính năng quét bằng camera, các bước giải, gia sư và các tính năng dùng mô hình khác, và hiện huy hiệu ghi giờ bật.</p>
+
 <h2>Mua hàng</h2>
-<p>Classic và Cân hàng miễn phí vĩnh viễn. Advanced và Ultimate miễn phí 30 ngày kể từ lần mở đầu tiên. Sau đó, bạn có thể chọn gói theo tháng, theo năm hoặc mở khóa vĩnh viễn một lần. Các gói tự gia hạn cho đến khi bị hủy; mở khóa vĩnh viễn không bao giờ hết hạn.</p>
+<p>Cơ bản, Cân hàng siêu thị, Bảng tính nháp, bộ đổi đơn vị và công thức miễn phí vĩnh viễn. Máy tính khoa học miễn phí một năm kể từ lần mở đầu tiên. Sau đó, máy tính này cần Calculators ProX Premium: mở khóa vĩnh viễn một lần, gói theo năm hoặc gói theo tháng. Các gói tự gia hạn cho đến khi bị hủy; mở khóa vĩnh viễn không bao giờ hết hạn.</p>
 <ul>
 <li><a href="https://www.apple.com/legal/privacy/">Apple App Store</a> — xử lý giao dịch trên iOS và cho ứng dụng biết quyền sử dụng còn hiệu lực hay không.</li>
 <li><a href="https://policies.google.com/privacy">Google Play</a> — xử lý giao dịch trên Android và cho ứng dụng biết quyền sử dụng còn hiệu lực hay không.</li>
@@ -113,10 +161,10 @@ nav a{margin-right:16px}
 <p>Sao chép kết quả, chia sẻ biên lai hay xuất sổ ngày ra CSV sẽ đưa đoạn văn bản đó cho ứng dụng bạn chọn — ứng dụng nhắn tin, email, hay bộ nhớ tạm. Điều đó chỉ xảy ra khi bạn bấm nút, văn bản đi tới nơi bạn gửi, và không bao giờ đi qua chúng tôi.</p>
 
 <h2>Giữ trong bao lâu</h2>
-<p>Dữ liệu của bạn nằm trên máy chừng nào ứng dụng còn được cài. Gỡ ứng dụng là xóa sạch. Vì không có gì được tải lên, không tồn tại bản sao nào ở nơi khác để chúng tôi giữ hay xóa.</p>
+<p>Dữ liệu của bạn nằm trên máy chừng nào ứng dụng còn được cài. Gỡ ứng dụng là xóa sạch. Vì không có gì được tải lên chỗ chúng tôi, không tồn tại bản sao nào ở nơi khác để chúng tôi giữ hay xóa.</p>
 
 <h2>Xóa dữ liệu</h2>
-<p>Xóa lịch sử hoặc xóa từng mục ngay trong ứng dụng, hoặc gỡ ứng dụng khỏi máy để xóa tất cả cùng lúc. Không có tài khoản nào để đóng và không cần yêu cầu gì từ chúng tôi.</p>
+<p>Cài đặt &rarr; Ngoại tuyến và quyền riêng tư &rarr; <strong>Xóa toàn bộ dữ liệu</strong> sẽ xóa mọi thứ ứng dụng đã lưu trên máy này, chỉ trong một bước và sau hai lần xác nhận. Bạn cũng có thể xóa lịch sử, xóa từng mục, hoặc gỡ hẳn ứng dụng. Không có tài khoản nào để đóng và không cần yêu cầu gì từ chúng tôi.</p>
 
 <h2>Trẻ em</h2>
 <p>Ứng dụng không hướng tới trẻ em dưới 13 tuổi và không cố ý thu thập thông tin của các em.</p>
